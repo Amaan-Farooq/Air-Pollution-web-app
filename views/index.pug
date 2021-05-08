@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "eng">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Pollution website</title>
+    script
+      include ../static/index.js
+    style
+      include ../static/style.css 
+</head>
+
+<body>
+    <div class="container">
+    <div class="navbar">
+       <h2> Check your city's pollution status </h2>
+    </div>
+    <div id="form">
+      <form action="/submit" method="POST">
+         <input type="search" name="name" id="name" placeholder="Enter your location"><br>
+         <button id="btn">Search</button>
+      </form>
+    </div>
+    </div>
+</body>
+</html>
