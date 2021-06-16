@@ -37,7 +37,7 @@ app.get('/',async (req,res)=>{
 
 })
 
-app.post('/air',async(req,res)=>{
+app.post('/submit',async(req,res)=>{
     let city = req.body.name
     console.log(city);
     try {
