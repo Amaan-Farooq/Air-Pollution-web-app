@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang = "eng">
-
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <title>Pollution website</title>
-    style
-      include ../static/style.css 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AirQuality WebApp</title>
+  <link rel="stylesheet" href="/static/green.css" />
 </head>
-
 <body>
-    <div class="container">
-    <div class="navbar">
-       <h2> Check your city's pollution status </h2>
-    </div>
-    <div id="form">
+  <div class="app-wrap">
+    <header>
       <form action="/submit" method="POST">
-         <input type="search" name="name" id="name" placeholder="Enter your location"><br>
-         <button id="btn">Search</button>
-      </form>
-    </div>
-    </div>
+      <input type="search" name="name" id="name" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </form>
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">Air Lookout</div>
+        <div class="date">#{Date}</div>
+      </section>
+      <div class="current">
+        //- <div><a class="hi-low" href="https://github.com/salman0ansari/AirLookout">Git Link</a></div>
+      </div>
+    </main>
+    
+  </div>
+  
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AirQuality WebApp</title>
+  <link rel="stylesheet" href="/static/dark.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <form action="/submit" method="POST">
+      <input type="search" name="name" id="name" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </form>
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">#{City}</div>
+        <div class="date">#{Date}</div>
+      </section>
+      <div class="current">
+        <div class="AQI">#{AQI}</div>
+        <div class="hi-low">Hazardous</div>
+        <div class="weather">It is recommended to wear a properly fitted respiratory mask.<br>People with heart or lung disease,or those who have had strokes should consult to healthcare provider about leaving the area.<br>Air quality is so bad that it can severly affect both healthy and sensitive people.</div>
+        <div class="hi-low">#{Pollutant}</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
