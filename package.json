@@ -1,12 +1,12 @@
 {
-  "name": "pollution",
-  "version": "1.0.0",
+  "name": "AirLookout",
+  "version": "2.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Amaan",
+  "author": "Mohd Salman",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
