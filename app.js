@@ -37,7 +37,7 @@ app.get('/',async (req,res)=>{
 
 })
 
-app.post('/submit',async(req,res)=>{
+app.post('/air',async(req,res)=>{
     let city = req.body.name
     console.log(city);
     try {
@@ -50,7 +50,7 @@ app.post('/submit',async(req,res)=>{
         response = await axios.get(link2)
         let aqi = response.data.data.current.pollution.aqius
         let major_pollutant = response.data.data.current.pollution.mainus
-        let CITY = response.data.data.city + ', ' +response.data.data.country
+        let CITY = response.data.data.city + ', ' + response.data.data.country
         /// day and date
         let now = new Date();
         let date = dateBuilder(now);

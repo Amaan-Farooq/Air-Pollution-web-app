@@ -10,7 +10,7 @@
 <body>
   <div class="app-wrap">
     <header>
-      <form action="/submit" method="POST">
+      <form action="/air" method="POST">
       <input type="search" name="name" id="name" autocomplete="off" class="search-box" placeholder="Search for a city..." />
     </form>
     </header>
@@ -20,10 +20,9 @@
         <div class="date">#{Date}</div>
       </section>
       <div class="current">
-        <div class="AQI">#{AQI}</div>
+        <div class="AQI">#{AQI}<span>#{Pollutant}</span></div>
         <div class="hi-low">Very Unhealty</div>
         <div class="weather">Everyone should try to stay indoors.<br>Avoid strenous activities outdoors & choose light activities indoors.<br>Set your AC to recirculate and use a HEPA air filter if possible.</div>
-        <div class="hi-low">#{Pollutant}</div>
       </div>
     </main>
   </div>
