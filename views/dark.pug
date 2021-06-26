@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AirLookout</title>
-  <link rel="stylesheet" href="/static/green.css" />
+  <title>AirLookoutp</title>
+  <link rel="stylesheet" href="/static/dark.css" />
 </head>
 <body>
   <div class="app-wrap">
@@ -16,15 +16,15 @@
     </header>
     <main>
       <section class="location">
-        <div class="city">Air Lookout</div>
+        <div class="city">#{City}</div>
         <div class="date">#{Date}</div>
       </section>
       <div class="current">
-        //- <div><a class="hi-low" href="https://github.com/salman0ansari/AirLookout">Git Link</a></div>
+        <div class="AQI">#{AQI}<span>#{Pollutant}</span></div>
+        <div class="hi-low">Hazardous</div>
+        <div class="weather">It is recommended to wear a properly fitted respiratory mask.<br>People with heart or lung disease,or those who have had strokes should consult to healthcare provider about leaving the area.<br>Air quality is so bad that it can severly affect both healthy and sensitive people.</div>
       </div>
     </main>
-    
   </div>
-  
 </body>
 </html>

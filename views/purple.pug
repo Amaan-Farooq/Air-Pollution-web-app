@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AirLookout</title>
-  <link rel="stylesheet" href="/static/green.css" />
+  <link rel="stylesheet" href="/static/purple.css" />
 </head>
 <body>
   <div class="app-wrap">
@@ -16,15 +16,15 @@
     </header>
     <main>
       <section class="location">
-        <div class="city">Air Lookout</div>
+        <div class="city">#{City}</div>
         <div class="date">#{Date}</div>
       </section>
       <div class="current">
-        //- <div><a class="hi-low" href="https://github.com/salman0ansari/AirLookout">Git Link</a></div>
+        <div class="AQI">#{AQI}<span>#{Pollutant}</span></div>
+        <div class="hi-low">Very Unhealty</div>
+        <div class="weather">Everyone should try to stay indoors.<br>Avoid strenous activities outdoors & choose light activities indoors.<br>Set your AC to recirculate and use a HEPA air filter if possible.</div>
       </div>
     </main>
-    
   </div>
-  
 </body>
 </html>
